@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / Registro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Logo</div>
+        <nav>
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="main.html#about">About</a></li>
+                <li><a href="main.html#photos">Photos</a></li>
+                <li><a href="main.html#products">Products</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="form-box">
+            <div class="button-box">
+                <button class="toggle-btn" onclick="showLogin()">Login</button>
+                <button class="toggle-btn" onclick="showRegister()">Registrar</button>
+            </div>
+
+            <!-- Formulário de Login -->
+            <form id="login-form" class="input-group">
+                <input type="email" class="input-field" placeholder="Email" required>
+                <input type="password" class="input-field" placeholder="Senha" required>
+                <button type="submit" class="submit-btn">Entrar</button>
+            </form>
+
+            <!-- Formulário de Registro -->
+            <form id="register-form" class="input-group hidden">
+                <input type="text" class="input-field" placeholder="Nome completo" required>
+                <input type="email" class="input-field" placeholder="Email" required>
+                <input type="password" class="input-field" placeholder="Senha" required>
+                <input type="password" class="input-field" placeholder="Confirmar senha" required>
+                <button type="submit" class="submit-btn">Registrar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
